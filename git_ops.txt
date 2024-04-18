@@ -1,0 +1,9 @@
+# After each release follow these steps to update your repo with new content:
+
+git fetch --all
+git checkout HOLLMBranch
+git merge --ff-only @{u}
+git add .
+git commit -m "branch is updated"
+git checkout main
+git merge HOLLMBranch --allow-unrelated-histories
