@@ -36,6 +36,10 @@ ruff = "^0.0.284"
 black = "^23.7.0"
 
 
+[tool.poetry.scripts]
+preactivate = "poetry shell"
+
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
